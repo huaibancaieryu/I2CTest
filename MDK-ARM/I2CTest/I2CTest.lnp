@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"i2ctest\startup_stm32f103xb.o"
+"i2ctest\main.o"
+"i2ctest\stm32f1xx_it.o"
+"i2ctest\stm32f1xx_hal_msp.o"
+"i2ctest\stm32f1xx_hal_gpio_ex.o"
+"i2ctest\stm32f1xx_hal_i2c.o"
+"i2ctest\stm32f1xx_hal.o"
+"i2ctest\stm32f1xx_hal_rcc.o"
+"i2ctest\stm32f1xx_hal_rcc_ex.o"
+"i2ctest\stm32f1xx_hal_gpio.o"
+"i2ctest\stm32f1xx_hal_dma.o"
+"i2ctest\stm32f1xx_hal_cortex.o"
+"i2ctest\stm32f1xx_hal_pwr.o"
+"i2ctest\stm32f1xx_hal_flash.o"
+"i2ctest\stm32f1xx_hal_flash_ex.o"
+"i2ctest\stm32f1xx_hal_exti.o"
+"i2ctest\system_stm32f1xx.o"
+--strict --scatter "I2CTest\I2CTest.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "I2CTest.map" -o I2CTest\I2CTest.axf
